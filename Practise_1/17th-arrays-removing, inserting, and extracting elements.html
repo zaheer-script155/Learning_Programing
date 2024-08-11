@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var cities = ["Karachi", "Lahore", "Islamabad", "Multan"];
+      console.log(cities[0]);
+      console.log(cities[1]);
+      console.log(cities[2]);
+      console.log(cities[3]);
+      console.log(cities[4]);
+      console.log(cities);
+
+      //add the elements in arrays
+      cities[4] = "Quetta";
+      console.log(cities[4]);
+      console.log(cities);
+
+      //add the element end of arrays
+      cities.push("Hydrabad", "Sukkur");
+      console.log(cities[5]);
+      console.log(cities);
+
+      //remove the element end of arrays
+      cities.pop();
+      console.log(cities);
+
+      //add the element start of arrays
+      cities.unshift("Murree", "Mahrabpur");
+      console.log(cities);
+
+      //remove the element start of arrays
+      cities.shift();
+      console.log(cities);
+
+      //add an item on index 2
+      cities.splice(2, 0, "Ranipur");
+      console.log(cities);
+
+      //remove an item on index 3
+      cities.splice(3, 1);
+      console.log(cities);
+
+      //remove an item on index 2,3,4
+      cities.splice(2, 3);
+      console.log(cities);
+
+      //remove an item on index 2,3 and add on item index 2
+      cities.splice(2, 2, "Sukkur", "Ranipur", "Multan", "Lahore");
+      console.log(cities);
+
+      // what is slice 
+    </script>
+  </head>
+  <body></body>
+</html>
