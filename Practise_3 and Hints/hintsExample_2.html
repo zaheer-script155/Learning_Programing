@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HINTS__2</title>
+    <style>
+      /* The DOM(Document Object Model) */
+      /* part_1 */
+      /* css link in head tag just phle karna he ending head tag ki */
+      /* maltipual css file ko link kea ja sakhta he */
+
+      /* #hide {
+        visibility: hidden;
+      } */
+
+      /* part_2 */
+      #myName {
+        color: red;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      .clsBox {
+        border: 2px solid red;
+        padding: 10px;
+        margin: 5px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+      }
+
+      /* part_3 */
+      /* h2{
+        color: blue;
+      }
+      #idBox{
+        color: green;
+      }
+      .clsBox{
+        color: green;
+      } */
+
+      /* part_4 */
+      /* .box {
+        border: 2px solid red;
+        width: 150px;
+        height: 250px;
+      }
+      .box li {
+        color: brown;
+        font-size: large;
+        list-style: none;
+      }
+      .mybox {
+        color: blue;
+        font-weight: bold;
+        font-size: large;
+      } */
+
+      /* Example */
+      /* #idB {
+        color: white;
+        background-color: red;
+      }
+      .firstCl {
+        border: 2px solid red;
+        width: 200px;
+        padding: 5px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+      .addNewCl {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+      } */
+
+      /* part_5 */
+      /* .container {
+        border: 2px solid red;
+        width: 100px;
+        background-color: azure;
+        padding: 5px;
+      }
+      .box {
+        border: 2px solid green;
+        width: 25px;
+        text-align: center;
+        margin: 4px;
+        color: red;
+        font-weight: bold;
+        font-size: large;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- The DOM(Document Object Model) -->
+    <!-- part_1 -->
+    <!-- <h1 id="hide">This is my first ID part</h1>
+    <h1>This is my first ID part</h1>
+    <div id="myId" class="my_1">
+      <div class="box1">This is the first Id box1</div>
+      <div class="box1">This is the first Id box2</div>
+      <div class="box1">This is the first Id box3</div>
+    </div>
+    <h1>This is my second ID part</h1>
+    <div id="myId" class="my_1">
+      <div class="box2">This is second Id box1</div>
+      <div class="box2">This is second Id box2</div>
+      <div class="box2">This is second Id box3</div>
+    </div> -->
+
+    <!-- part_2 -->
+    <!-- <h1 id="myName">Zaheer Abbas</h1>
+
+    <div class="clsBox"></div>
+    <div class="clsBox"></div>
+    <div class="clsBox"></div>
+    <div class="clsBox"></div> -->
+
+    <!-- part_3 -->
+    <!-- <h2 class="myClass">This is my first heading</h2>
+    <div id="idBox">This is my Id box</div>
+    <div class="clsBox">This is my Class Box</div>
+    <h2>This is my empety h2</h2> -->
+
+    <!-- part_4 -->
+    <!-- <div class="box">
+      <div class="mybox">Important</div>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </div> -->
+
+    <!-- Example -->
+    <!-- <p class="firstCl">i am a paragraph</p> -->
+
+    <!-- part_5 -->
+    <!-- <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div> -->
+
+    <script>
+      //The DOM(Document Object Model)
+      //part_1
+      //JS link in body tag end of body tag bus body tag ki ending tag se phle add karna he
+      //promt aor alert ki jab tak window band ni hoti tab tak code exicute ni hota
+      /*js alg file banai ki fydhi(readability barhata he mtlb code read karne me assni hogi and acha developer ki sign he)
+                     (modular banata he mtlb choti choti tokari senior ko smajhani me assani hogi and acha developer ki sign he)
+                     (browser caching mtlb ye loading time fast karta he)*/
+      //maltipual js file ko link kea ja sakhta he
+
+      //window object(ye hamre li broswer create karta he chrome opera wgrh) he is global object
+      // console.log(window);
+      // console.log("Hello World_1"); //print
+      // window.console.log("Hellow world_2");//print(hamre code ko pata he cnsole .log ka pata he window object ko ye hamra he part he he)
+
+      // console.log(document);//log only use for print
+      // console.log(window.document);//pat he asko ye window ki part he
+      // console.dir(document);//dri use for print property and method
+      // console.dir(window.document);//pat he asko ye window ki part he
+      //html ki tag ko acces karne ko ham dom kaehty he aor dom dynamic changes karta he on wb page jis ko manipulation kehty ha
+
+      //The DOM manipulation(dynamic changinges)
+      //   let myFirstId=document.getElementById("myId");//he return value i will store new variable
+      //   console.log(myFirstId);
+      // console.dir(myFirstId)
+
+      // let myFirstClass= document.getElementsByClassName("box1")//ye hami html collection deta he ye simlear arry jasa dekhta he lkn exacetly arry ni hota
+      // console.log(myFirstClass);
+      // console.dir(myFirstClass);
+
+      // let myFirstTagName = document.getElementsByTagName("h1")//ye hami tag ki hassab se elements returns karata he
+      // console.log(myFirstTagName);
+      // console.dir(myFirstTagName);
+
+      //queryselector
+      // let myFirstElement = document.querySelector("h1")//give me first one element in nodelist not all elements
+      // // console.log(myFirstElement);
+      // console.dir(myFirstElement);
+
+      // let myAllElements = document.querySelectorAll("h1")//he give node list as tag wale sare elemnts dega
+      // console.log(myAllElements);
+      // console.dir(myAllElements);
+
+      // let getMyElementId = document.querySelector("#myId")//as me hm uniq id pas kar sakhty ha aor queryselectorall id pr sense ni banata
+      // console.log(getMyElementId);
+      // console.dir(getMyElementId);
+
+      // let getElementByClass = document.querySelector(".my_1"); //kahli queryselector hemsha first claas provide karta he
+      // console.log(getElementByClass);
+      // console.dir(getElementByClass);
+
+      // let getEleAllByCl= document.querySelectorAll(".my_1")//he give a also node list mtlb same class wale sare elements
+      // console.log(getEleAllByCl);
+      // console.dir(getEleAllByCl);
+
+      //DOM manipulation propertize
+      //as me ham value ko get be kar sakhty ha aor set be(set mtlb change,update)
+      //show tag name
+      // let getEleAllByCl= document.querySelector(".my_1")//as me jab ham tag name find karty ha to aos time hami ak he elemnt ko get karna pari ga sab ko ni
+      // console.log(getEleAllByCl);
+      // console.dir(getEleAllByCl);
+      // let tagName = getEleAllByCl.tagName//give me tag name
+      // console.log(tagName);
+
+      // show innertext
+      // let getInerText_1 = document.querySelector("div");
+      // console.log(getInerText_1);
+      // let gettext = getInerText_1.innerText;//serf jab ham tage ko get kary ga fir se ham aos ki innertext check kar sagy ga
+      // console.log(gettext);
+
+      // // show html contents
+      // let getInerText_1 = document.querySelector("div");
+      // console.log(getInerText_1);
+      // let gettext = getInerText_1.innerHTML;//ham asko get tag ya id ya class se kar ki fir se as me ham aski innerhtml ko check kar sakhty ha
+      // console.log(gettext);
+
+      //set text value
+      // let setText = document.querySelector("h1")
+      // console.log(setText);
+      // setText.innerText="This is my updated value of h1"//set text value
+      // setText.innerHTML="<div>I am innerhtml div</div>"//set innerhtml value and inner html ki fydhe ye be he ham tag likh saakhty ha kase be text ko italic kely ham aos ki ander i wala tag use kar sakhty ha
+
+      //show hide content and wase be iner text kely kam karta he
+      // let showHideText = document.querySelector("h1");
+      // console.log(showHideText);
+      // let showHideText_1 = showHideText.innerText;
+      // console.log(showHideText_1);//show ni ho raha text
+
+      // let showHideText_1 = document.querySelector("h1");
+      // console.log(showHideText_1);
+      // let showHideText_2 = showHideText_1.innerHTML;
+      // console.log(showHideText_2);//only text show in cnsole
+
+      // let showHideTextCon = document.querySelector("h1");
+      // console.log(showHideTextCon);
+      // let showHideTextCon_1 = showHideTextCon.textContent;
+      // console.log(showHideTextCon_1);//only text show in cnsole
+
+      // part_2
+      // let textAppend = document.querySelector("h1");
+      // console.log(textAppend.innerText);
+      // textAppend.innerText = textAppend.innerText + " Noorani";
+      // console.log(textAppend.innerText);
+
+      // let boxTextSet = document.querySelectorAll(".clsBox");
+      // console.log(boxTextSet);
+      // boxTextSet[0].innerHTML = "Zaheer";
+      // boxTextSet[1].innerHTML = "Abbas";
+      // boxTextSet[2].innerHTML = "Noorani";
+
+      // let boxTextSet_1 = document.querySelectorAll(".clsBox");
+      // let i = 0;
+      // while (i < boxTextSet_1.length) {
+      //   if (boxTextSet_1[i] === boxTextSet_1[0]) {
+      //     boxTextSet_1[i].innerHTML = "Zaheer";
+      //   } else if (boxTextSet_1[i] === boxTextSet_1[1]) {
+      //     boxTextSet_1[i].innerHTML = "Abbas";
+      //   } else if(boxTextSet_1[i] === boxTextSet_1[2]) {
+      //     boxTextSet_1[i].innerHTML = "Noorani";
+      //   }
+      //   i++;
+      // }
+      // same
+      // let boxTextSet_1 = document.querySelectorAll(".clsBox");
+      // let i = 0;
+      // while (i < boxTextSet_1.length) {
+      //   if (i === 0) {
+      //     boxTextSet_1[i].innerHTML = "Zaheer";
+      //   } else if (i === 1) {
+      //     boxTextSet_1[i].innerHTML = "Abbas";
+      //   } else if (i === 2) {
+      //     boxTextSet_1[i].innerHTML = "Noorani";
+      //   }
+      //   i++;
+      // }
+      // let boxTextSet_1 = document.querySelectorAll(".clsBox");
+      // let strinArray_1 = ["Zaheer", "Abbas", "Noorani"];
+      // let i = 0;
+      // while (i < boxTextSet_1.length) {
+      //   boxTextSet_1[i].innerHTML=strinArray_1[i]
+      //   i++;
+      // }
+
+      // strinArray_1.map((a, i) => {
+      //   // boxTextSet_1[i].innerHTML = strinArray_1[i];
+      //   boxTextSet_1[i].innerHTML = a;
+      //   // i++;
+      //   console.log(a);
+      // });
+
+      // part_3
+      //getAtribute
+      //  let divBox = document.querySelector("#idBox")//get with id
+      //  let showAtrId=divBox.getAttribute("id") //show atribute name from id
+      //  console.log(showAtrId);
+
+      //  let divBox_1 = document.querySelector(".clsBox")//get with class
+      //  let showAtrCls=divBox_1.getAttribute("class")//show atribute name from class
+      //  console.log(showAtrCls);
+
+      // let h2tag = document.querySelector("h2"); //get with tagName
+      // let showAtrTag = h2tag.getAttribute("class"); //show atribute name from class
+      // console.log(showAtrTag);
+
+      //setAtribute
+      // let myDiv = document.querySelector("#idBox");//get elemts by id name
+      // let setAtr = myDiv.setAttribute("id", "myNewId"); //pass main id or class or other and change new name
+      // console.log(setAtr);
+
+      //style
+      // let styleEl = document.querySelector("h2");
+      // styleEl.style.color="red"//style with node
+
+      //part_4
+      //insert ele
+      // let createEl = document.createElement("button"); //create ele
+      // createEl.innerText = "click_me"; //set text
+      // console.log(createEl);
+      // let accPosition = document.querySelector(".box"); //select container position
+      // accPosition.append(createEl); //select positon in container end me hoga
+      // accPosition.prepend(createEl); //select positon in container start me hoga
+      // accPosition.before(createEl); //before container se just pahly hoga
+      // accPosition.after(createEl); //after container se just bad hoga
+
+      //delete el
+      // let delEl = document.querySelector(".mybox")//acc ele
+      // delEl.remove()//remove ele
+
+      // let delEl_1 = document.querySelector("button")//acc ele this buttun also create  in jS so he dont show in html boday he show in inspect element
+      // delEl_1.remove()//remove ele
+
+      //Example
+      // let crtEl = document.createElement("button");
+      // crtEl.innerText = "click_me";
+      // console.log(crtEl);
+
+      // let setId = crtEl.setAttribute("id", "idB"); //ham ne as ko atribute da dia he aor as atr ko phle he css da rakhy the css ki andr asle yahn apply ho choki ha
+      // let getItr = crtEl.getAttribute("id");
+      // console.log(getItr);
+
+      // crtEl.style.color = "white"
+      // crtEl.style.backgroundColor = "red"
+
+      // let selectPosition = document.querySelector("body");
+      // let setEl = selectPosition.prepend(crtEl);
+
+      // let getEl_1 = document.querySelector(".firstCl");
+      // console.log(getEl_1);
+
+      // let classList = getEl_1.classList
+      // console.log(classList);//cheack class ak ele ko ktne classes he
+
+      // // getEl_1.setAttribute("class", "addNewCl")//agr ham ne as taraky se class append kar da to poranin class ko overwrite kar da ga
+
+      // getEl_1.classList.add("addNewCl"); //ham as tarky se class ko add kart ha
+
+      // // getEl_1.classList.remove("addNewCl");//ham as tarky se class remove kart ha
+
+      // let classList_1 = getEl_1.classList
+      // console.log(classList_1); //cheak class list in onle ele
+
+      //part_5
+      // let accesChildern = document.body.children[0];
+      // console.log(accesChildern);
+      // let st = accesChildern.lastElementChild;
+      // console.log(st);
+      // st.innerHTML = "Z";
+    </script>
+  </body>
+</html>

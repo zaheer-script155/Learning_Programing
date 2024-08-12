@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HINTS__1</title>
+  </head>
+  <body>
+    <script>
+      //ForLop syntax and Example
+      // for(let i = 0; i<=100; i++){
+      //     console.log(i);
+      // }
+
+      //WhileLop syntax and Example
+      // let i = 0
+      // while (i<=100) {
+      //     console.log(i);
+      //     i++
+      // }
+
+      //DoWhileLop syntax and Example
+      // let i = 0
+      // do {
+      //     console.log(i);
+      //     i++
+      // } while (i<=100);
+
+      //DoWhileLop agr condition wrong ho to kam se kam ak bar run zaroor karta he for Example
+      // let i = 110
+      // do {
+      //     console.log(i);
+      //     i++
+      // } while (i<=100);
+
+      //ForOf use for string and arry for example
+      // let str = "Zaheer Abbbas"
+      // for (const valueOfstr of str) {
+      //     console.log(valueOfstr);
+      // }
+
+      //Example 2
+      // let str1 = "Zaheer Abbbas" //space also be count
+      // let sizeOfStr = 0
+      // for (const valueOfstr of str1) {
+      //     console.log(valueOfstr);
+      //     sizeOfStr++
+      //   }
+      //   console.log(sizeOfStr);
+
+      //ForIn use for object and arry for example
+      // let dataOfStudent = {
+      //   name: "Zaheer Abbas",
+      //   age: 20,
+      //   inClass: 10,
+      //   uni: "Unversity of Karachi",
+      // };
+      // for (const val in dataOfStudent) {
+      //   console.log(dataOfStudent[val]);
+      // }
+
+      //Ex with for, while and dowhile-lops
+      //   let num = 0;
+      //   let targetNum = 100;
+      //   let totalItration = 0;
+      //   for (i = num; i <= targetNum; i++) {
+      //     if (i % 2 === 0) {
+      //       console.log(i);
+      //       totalItration++;
+      //     }
+      // }
+      // console.log("The even number total irration is " + totalItration);
+
+      //and while
+      // let num1 = 0;
+      // let targetNum1 = 100;
+      // let totalItration1 = 0;
+      // while (num1 <= targetNum1) {
+      //   if (num1 % 2 === 0) {
+      //     console.log(num1);
+      //     totalItration1++;
+      //   }
+      //   num1++;
+      // }
+      //   console.log("The even number total irration is " + totalItration1);
+      //   //You can also wite this way backtick somethings name
+      //   console.log(`The even number total irration is ${totalItration1}`);
+
+      //and Dowhile
+      //   let num2 = 0;
+      //   let targetNum2 = 100;
+      //   let totalItration2 = 0;
+      //   do {
+      //     if (num2 % 2 === 0) {
+      //       console.log(num2);
+      //       totalItration2++;
+      //     }
+      //     num2++;
+      //   } while (num2 <= targetNum2);
+      //   console.log("The even number total irration is " + totalItration2);
+      //   //You can also wite this way backtick somethings name
+      //   console.log(`The even number total irration is ${totalItration2}`);
+
+      //string in js
+      // let str = "Zaheer Abbas";
+      // console.log(str);
+      // let lengthOfStr = str.length;
+      // console.log(lengthOfStr); //space will be count
+
+      //indies of string
+      // let indexStr = str[7];
+      // console.log(indexStr);
+
+      //Template literals in Js
+      // let tempLit = `Zaheer Abbas`;
+      // console.log(tempLit);
+
+      // let nameOfPen = "Ball Pen";
+      // let priceOfPen = 20;
+      // console.log("The Price Of " + nameOfPen + " is " + priceOfPen);
+      // console.log(`The price of ${nameOfPen} is ${priceOfPen}`);
+
+      // let myName= "Zaheer Abbas"
+      // let caste = `Noorani`
+      // console.log(`${myName}${caste} The price of pen is ${10+10-5+5}`);
+
+      // let faName1 = "Zaheer\tAbbas"//use for tab
+      // console.log(faName1);
+
+      // let faName2 = "Zaheer\nAbbas"//use for neline
+      // console.log(faName2);
+
+      //string method in js
+      // let nameIs1 = "Zaheer Abbas"
+      // let lowerCase = nameIs1.toLowerCase()
+      // console.log(lowerCase);
+
+      // let nameIs2 = "Zaheer Abbas"
+      // let upperCase = nameIs2.toUpperCase()
+      // console.log(upperCase);
+
+      // let nameIs3 = "     Zaheer Abbas    "
+      // let trimCase = nameIs3.trim()
+      // console.log(trimCase);
+
+      // let nameIs4 = "Zaheer Abbas"
+      // let sliceCase = nameIs4.slice(2,9)
+      // console.log(sliceCase);
+
+      // let myName = "Zaheer Abbas";
+      // let casteOf = " Noorani";
+      // let concatstr1andstr2 = myName.concat(casteOf);
+      // console.log(concatstr1andstr2);
+
+      // let nameIs5 = "Zaheer Abbas"
+      // let replaceCase = nameIs5.replace("Z", "M")
+      // console.log(replaceCase);
+
+      // let nameIs6 = "Zaheer Abbas"
+      // let chartCase=nameIs6.charAt(0)
+      // console.log(chartCase);
+
+      //arry in Js
+      // let markOfStudent = [33,34,56,67,48,49,74,56,56]
+      // console.log(markOfStudent);
+      // console.log(markOfStudent.length); //calculate length of arry
+
+      // let printOneIndex = markOfStudent[4]
+      // console.log(printOneIndex);
+
+      // markOfStudent[2]=48 //onle update in arry why?arry is meutable string is unmeutable can not cahnge in string
+      // console.log(markOfStudent);
+      // markOfStudent[11]=10 //index 9,10 is empaty arry index
+      // console.log(markOfStudent);
+
+      // let nameOfHeroez = [
+      //   "Zaheer",
+      //   "Abbas",
+      //   "Noorani",
+      //   "Rajab",
+      //   "Uddin",
+      //   "Hassnain",
+      //   "Abbas",
+      // ];
+      // console.log(nameOfHeroez);
+      // for (let i = 0; i < nameOfHeroez.length; i++) {
+      //   console.log(nameOfHeroez[i]);
+      // }
+
+      // let i1 = 0;
+      // while (i1 < nameOfHeroez.length) {
+      //   console.log(nameOfHeroez[i1]);
+      //   i1++;
+      // }
+
+      // let i2 = 0;
+      // do {
+      //   console.log(nameOfHeroez[i2]);
+      //   i2++;
+      // } while (i2 < nameOfHeroez.length);
+
+      //arry kely reffer for of loop kara jatta he lkn for in loop be kar sakhty he ham
+      //use for of loop
+      // for (const herozeOfAry of nameOfHeroez) {
+      //   console.log(herozeOfAry);
+      // }
+      // let marksOfStudents = [85, 97, 44, 37, 76, 60];
+      // let sumOfmarks = 0;
+      //   for(let i = 0; i<marksOfStudents.length; i++){
+      //     console.log(marksOfStudents[i]);
+      //     sumOfmarks= sumOfmarks+marksOfStudents[i]
+      //   }
+      //   console.log(`Total sum of marks is ${sumOfmarks}`);
+      // let av = sumOfmarks/marksOfStudents.length
+      // console.log("The average of total Marks is "+av);
+
+      // for (const valOfStudents of marksOfStudents) {
+      //   // console.log(valOfStudents);
+      //   sumOfmarks = sumOfmarks + valOfStudents;
+      // }
+      // console.log(`The sum of total marks is ${sumOfmarks}`);
+      // let ave = sumOfmarks / marksOfStudents.length;
+      // console.log(`The average of total marks is ${ave}`);
+
+      // let marksOfStudents = [85, 97, 44, 37, 76, 60];
+      // let i = 0;
+      // let sumOfMarks1 = 0;
+      // let sizeOfItration = 0;
+      // while (i < marksOfStudents.length) {
+      //   console.log(
+      //     "The index is "
+      //       .concat(i)
+      //       .concat(" in which marks is = ".concat(marksOfStudents[i]))
+      //   );
+      //   // console.log(marksOfStudents[i]);
+      //   sumOfMarks1 = sumOfMarks1 + marksOfStudents[i];
+      //   i++;
+      //   sizeOfItration++;
+      // }
+      // console.log(`The sum of total marks is = ${sumOfMarks1}`);
+      // let ave1 = sumOfMarks1 / marksOfStudents.length;
+      // console.log(`The average of total marks is = ` + ave1);
+      // console.log("Total number of itration is = ".concat(sizeOfItration));
+
+      // let itmsOfPrice = [250, 645, 300, 900, 50];
+      // let offerOfItems = 10;
+      // for (let i = 0; i < itmsOfPrice.length; i++) {
+      //   console.log(itmsOfPrice[i]);
+      //   let offer = itmsOfPrice[i] / offerOfItems;
+      //   console.log(offer);
+      //   itmsOfPrice[i] = itmsOfPrice[i] - offer;
+      //   console.log(`The value of items after offer is ${itmsOfPrice[i]}`);
+      // }
+      // console.log(itmsOfPrice);//ham ne as me  new arry generate kar choki he use for loop onley
+
+      // let itmsOfPrice1 = [250, 645, 300, 900, 50];
+      // let i = 0;
+      // let offerOfItems1 = 10;
+      // for (let valOfItem of itmsOfPrice1) {
+      //   let offerOfItems2 = valOfItem / offerOfItems1;
+      //   // console.log(offerOfItems1);
+      //   valOfItem1 = valOfItem - offerOfItems2;
+      //   console.log(valOfItem1);
+      //   /*agr for of lop use karna he aos me agr ham ne value auth li to
+      //    hami khali peli value he return ho saakhti he new arry ni*/
+      // }
+
+      // let itmsOfPrice2 = [250, 645, 300, 900, 50];
+      // let i2 = 0;
+      // let offerOfItems2 = 10;
+      // for (let valOfItem2 of itmsOfPrice2) {
+      //   console.log(itmsOfPrice2[i2]);
+      //   let offer2 = itmsOfPrice2[i2]/offerOfItems2
+      //   console.log(offer2);
+      //   itmsOfPrice2[i2]=itmsOfPrice2[i2]-offer2
+      //   i2++
+      //   /*agr for of lop use karna he aos me se ham ne arry wale value kar and new itrate
+      //   bana kr aos ko use kar la to ham jase for loop se kam laty he asi he as for of loop se kam le sakhty
+      //   aor as taraky ko apnanai se ham ne new arry be genrate kar sakhty he asl me ye index prode karta he tareeka*/
+      // }
+      // console.log(itmsOfPrice2);
+
+      //Arry methods in JS
+      // let nameOfStudents = ["Zaheer", "Rajab", "AliGul", "Hassnain"];
+      // console.log(nameOfStudents);
+
+      // nameOfStudents.push("IqbalKhan"); //add the item end of arry
+      // console.log(nameOfStudents);
+
+      // deleteItem = nameOfStudents.pop(); //Delete item end of arry and return value
+      // console.log(nameOfStudents);
+      // console.log(deleteItem);//deleted item
+
+      // let itemConvertToString = nameOfStudents.toString();//convert to string
+      // console.log(itemConvertToString);
+
+      // let myFamlayNames = ["ZaheerAbbas", "RajabUddin", "HassnainAbbas"];
+      // let myNebNAmes = ["AliGul", "ImranAli"];
+      // let totalNames = myFamlayNames.concat(myNebNAmes);//join maltipull arry
+      // console.log(totalNames);
+      // let myRelative = ["Imran khan","GhulamRasool"]
+      // let totalNames1= myFamlayNames.concat(myNebNAmes, myRelative)//if pass more of one arry seperate comma
+      // console.log(totalNames1);
+
+      // let classMraks = [33, 22, 33, 44, 56, 66];
+      // console.log(classMraks);
+      // classMraks.unshift(20, 21); //add start of the arry
+      // console.log(classMraks);
+
+      // let deleteMarks = classMraks.shift();
+      // console.log(classMraks);//show arry after delete one item in arry
+      // console.log(deleteMarks); //show delete marks in arry
+
+      // let ageOfPersons = [12, 13, 14, 15, 16, 17, 18, 19];
+      // console.log(ageOfPersons);
+
+      // let ageOfPersons1=ageOfPersons.slice(1,4)//get some peace  of arry
+      // console.log(ageOfPersons1);
+
+      // let ageOfPersons2 = ageOfPersons.slice()//can we use of create copay of any arry
+      // console.log(ageOfPersons2);
+
+      // let ageOfPersons3 = [12, 13, 14, 15, 16, 17, 18, 19];
+      // console.log(ageOfPersons3);
+      // ageOfPersons3.splice(1,2,120,121) //2 items delete and 2 items add
+      // console.log(ageOfPersons3);
+      // ageOfPersons3.splice(3,0,122,123,124) //onley add on index number 3
+      // console.log(ageOfPersons3);
+      // ageOfPersons3.splice(1,5)//onley delete on index number 1
+      // console.log(ageOfPersons3);
+      //So we are add,replace, delete and copy of aryy any index use splice methd in arry
+
+      //Example of arry
+      // let nameOfCompanies = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"]
+      // console.log(nameOfCompanies);
+      // nameOfCompanies.shift()//remove one element start in arry
+      // console.log(nameOfCompanies);
+      // nameOfCompanies.splice(1,1,"Ola")//replace one itmes in arry
+      // console.log(nameOfCompanies);
+      // console.log(nameOfCompanies);//ad the end of arry
+      // nameOfCompanies.push("Amazon")
+
+      //function in JS
+      /*(function hami redendancy se bachata he mtlb bar bar ak he
+            cheze repeat hone se bacht jatty ha bus ham ne call akrne hoti
+            he wo poch jata he aor hami acha developer bana he acha developer
+            hemsha repeate hone wale cheze ko function me convert kar dety he)*/
+
+      // function myFristFunction() {
+      //   console.log("Hello Audience");
+      //   console.log("My name is Zaheer Abbas");
+      //   console.log("My father name is Rajab Uddin");
+      // }
+      // myFristFunction(); //this way to call function or invoke the function
+
+      // function myFuction_2(message) { //parameter->input
+      //   console.log(message);
+      // }
+      // myFuction_2("My name is Zaheer Abbas")//argument kehty ha as parameter be keh sakhty ha but si argument ha
+
+      // function sumOfNumber(x, y, z) {
+      //   totalOp = (x + y) * z;
+      //   return totalOp;
+      // }
+      //  console.log(sumOfNumber(2,3,5));
+      // let sumOfNumber1 = sumOfNumber(2, 3, 5);
+      // console.log(sumOfNumber1);
+      /*jo kam karna he wo return se phle kar lai return ki bad wala
+            code execute ni hota aor jo function ki parameter he wo like local
+            veriable jase kam karty he in ka scope serf in block of function me hota ha*/
+
+      // function myFun1(a,b,c,d) {
+      //   value= (a/b)*(c+d)
+      //   return value
+      // }
+      // let myFun2=myFun1(6,3,5,5)
+      // console.log(myFun2);
+
+      //for example use simple functon
+      // let totalMarks = 500
+      // console.log(`The total marks of student is ${totalMarks}`);
+      // let pers = 100
+      // function marksOfStudent(eng,math,sci,phy,chem) {
+      //   let val = eng+math+sci+phy+chem
+      //   return val
+      // }
+      // let totalSum = marksOfStudent(55,68,77,83,92)
+      // console.log(`The total obtain marks of student is ${totalSum}`);
+
+      // function perstangeOfStudent(perstange) {
+      //   per = perstange/totalMarks*pers
+      //   return per
+      // }
+      // let finalResult = perstangeOfStudent(totalSum)
+      // console.log(`The obain marks in perstange is ${finalResult}%`);
+
+      //arrow function this is modern js function
+      //arrow function ko compact tareeka aor chota tareeka kaha jata he
+      //arrow function hamesh choti kam kely use hoti he
+      //agr hm ne arrow ko let vari ka sath define kar dia ti agy ja kar ham asi he varible me koi aor be value dall sakhty he
+      //jase as bar let ki sath ham na function rakha ha agly bar ham ass me koi number be passs kar sakty ha jase 5 or 10
+
+      // let arroFun = () => {  //as me arrow right side waala ha ham na asko kasi variable me store kara ha jase assni se kam kar saghy
+      //   console.log("Zaheer Abbas");
+      // };
+      // arroFun();
+
+      // let arroFun1 = (a, b) => {
+      //   return a + b;
+      // };
+      // let arroFunRes = arroFun1("Zaheer ", "Abbas");
+      // console.log(arroFunRes);
+
+      // let arroFun2 = (a, b) => {
+      //   let comine = a + b
+      //   return comine;
+      // };
+      // let arroFunRes1 = arroFun2("Zaheer ", "Abbas");
+      // console.log(arroFunRes1);
+
+      //how to create arrow function in js
+      // function myName1(){
+      //   console.log("Hello Zaheer");
+      // }
+      // myName1()
+
+      // let greet = function myName2(){ //onle example not correct way
+      //   console.log("Hello Zaheer");
+      // }
+      // greet()
+
+      // let greet1 = function(){ //onle example not correct way
+      //   console.log("Hello Zaheer");
+      // }
+      // greet1()
+
+      // let greet2 = ()=>{ //this is correct way to write a arrow function
+      //   console.log("Hello Zaheer");
+      // }
+      // greet2()
+
+      //  for example use arrow functon
+      // let totalMarks = 500;
+      // console.log(`The total marks of student is ${totalMarks}`);
+      // let pers = 100;
+      // let marksOfStudent = (eng, math, sci, phy, chem) => {
+      //   let val = eng + math + sci + phy + chem;
+      //   return val;
+      // };
+      // let totalSum = marksOfStudent(55, 68, 77, 83, 92);
+      // console.log(`The total obtain marks of student is ${totalSum}`);
+
+      // let perstangeOfStudent = (perstange) => {
+      //   per = (perstange / totalMarks) * pers;
+      //   return per;
+      // };
+      // let finalResult = perstangeOfStudent(totalSum);
+      // console.log(`The obain marks in perstange is ${finalResult}%`);
+
+      //arrow function example
+      // let f = 2;
+      // let h = 100;
+      // let arrowFun_1 = (a, b, c, d, e) => {
+      //   let g = (a + b) / f + (c + d - e) / f;
+      //   return g;
+      // };
+      // let arrowFun_2 = arrowFun_1(2, 2, 3, 3, 2);
+      // console.log(arrowFun_2);
+
+      // let arrowFun_3 = (arrowFun_4) => { //pass arrow function
+      //   let k = (arrowFun_4 / f) * h;
+      //   return k;
+      // };
+      // let arrowFun_5 = arrowFun_3(arrowFun_2)
+      // console.log(arrowFun_5);
+
+      //example for count vovles letter
+      // function countVow(string_1) {
+      //   let count_1 = 0;
+      //   for (const value_1 of string_1) {
+      //     if (
+      //       value_1 === "a" ||
+      //       value_1 === "e" ||
+      //       value_1 === "i" ||
+      //       value_1 === "o" ||
+      //       value_1 === "u"
+      //     ) {
+      //       count_1++;
+      //     }
+      //   }
+      //   return count_1;
+      // }
+      // let resultCountVow = countVow("Zaheer");
+      // console.log(resultCountVow);
+
+      // //example for count vowles letter use arrow function
+      // let countVowArrow = (string_1) => {
+      //   let count_1 = 0;
+      //   for (const value_1 of string_1) {
+      //     if (
+      //       value_1 === "a" ||
+      //       value_1 === "e" ||
+      //       value_1 === "i" ||
+      //       value_1 === "o" ||
+      //       value_1 === "u"
+      //     ) {
+      //       count_1++;
+      //     }
+      //   }
+      //   return count_1;
+      // };
+      // let resultCountVowArrow = countVowArrow("Zaheer");
+      // console.log(resultCountVowArrow);
+
+      //ForEach Loop use for arrays
+      /*Actually for each is a method use for onley arry asl me asko arry ki sath
+      bind kar dia he to asle ab ye mthod ban gya he jase string ki sath .upperCase likhty
+      he wo aos ko upper case me convert kar deta he asi he as ko be methid he kahi ga
+      for each he to function ye arry ki sath joor gya ab ye method kehty he*/
+      //aor function ki ander para meter me be function pass kea jata he
+      //aor function ko dosre function ki ander return be kia ja sakhta he
+      //asi function ko ham callBackFunction kehty ha jab for each me istmall ho
+      // let myFunCallBack = (a, b) => {
+      //   let c = a + b;
+      //   return c;
+      // };
+      // let resultOfCallBack = myFunCallBack(2, 2);
+      // console.log(resultOfCallBack);
+
+      // let myFunCallBack_1 = (resultOfCallBack) => { //Function pass in parameter
+      //   return resultOfCallBack; //function pass in return
+      // };
+      // let resultOfCallBack_1 = myFunCallBack_1(resultOfCallBack) //function pass in argument
+      // console.log(resultOfCallBack_1);
+
+      //For each use for arry and run callBackFunction
+      // let arrayForC = [1,2,3,4,5,6,7,8,9]
+      // arrayForC.forEach((valOfEach)=>{ //asko ham callBackFunction kehty ha
+      //   console.log(valOfEach);
+      // })
+
+      //exmple print square use for each
+      // let arrayForS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // arrayForS.forEach((valS, s) => {
+      //   console.log(s, valS * valS); //valS**2 this is also correct not a wrong
+      //   // let a = "index " + s + " = " + valS * valS;
+      //   // console.log(a);
+      // });
+      //example with arry and use callback function in forach loop
+      // let nameOfStr_1 = ["Zaheer", "Rajab","Hassnain","Noorani"]
+      // nameOfStr_1.forEach((valOfName_1)=>{
+      //   console.log(valOfName_1);
+      // })
+      //Map method
+      // let mapArry_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // mapArry_1.map((valOfMap_1) => {
+      //   //work same as for each method but he give me a new arry
+      //   console.log(valOfMap_1);
+      // });
+
+      // let newMapArry_1 = mapArry_1.map((valOfMap_1) => {
+      //   return valOfMap_1;
+      // });
+      // console.log(newMapArry_1); //he give me a new arry
+
+      //filter method
+      // let filterArry_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // filterArry_1.filter((valOfFilter_1)=>{ //work as well as foreach methd but i will get new arry with some condition
+      //   console.log(valOfFilter_1);
+      // })
+
+      // let newFilterArray_1 = filterArry_1.filter((valOfFilter_1) => {
+      //   return valOfFilter_1%2===0;//he is some condition appy
+      // });
+      // console.log(newFilterArray_1);
+
+      //reduce method in JS
+      // let reduceArray_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // let resultReduceArray_1=reduceArray_1.reduce((prev,curr)=>{
+      //   return prev+curr
+      // })
+      // console.log(resultReduceArray_1); //he give me a final result
+
+      // let reduceArray_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // let resultReduceArray_2=reduceArray_2.reduce((prev,curr)=>{
+      //   return prev>curr ? prev : curr
+      // })
+      // console.log(resultReduceArray_2); /*ase kam jis me zadh value ho rsult
+      // ak he value mill jye to as mwthiod ko ham redure method kehty ha chahie
+      // wo sum ho, large ka pata karna ho, average ka pata karna ho and use conditon*/
+
+      //example
+      // let usearNumber = Number.parseInt(prompt("Enter random number"));
+      // let usearArray = [];
+      // let i = 1;
+      // while (i <= usearNumber) {
+      //   usearArray[i - 1] = i;
+      //   i++;
+      // }
+      // console.log(usearArray);
+      // let sumOfRandamArray = usearArray.reduce((res, cur) => {
+      //   return res + cur;
+      // });
+      // console.log(`The sum of random number is = ${sumOfRandamArray}`);
+    </script>
+  </body>
+</html>

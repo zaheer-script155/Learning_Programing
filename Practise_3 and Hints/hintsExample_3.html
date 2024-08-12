@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HINTS__3</title>
+    <style>
+      /* part_1 */
+      /*.myClsH1 {
+        border: 2px solid red;
+        color: blue;
+        cursor: pointer;
+      }
+      .box {
+        border: 2px solid red;
+        margin: 20px 0px 20px 0px;
+        width: 30px;
+        text-align: center;
+        color: blue;
+      }
+      .myClsB {
+        color: blue;
+        border: 2px solid red;
+      }
+      .myClsH_2 {
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+      }
+      #toggle_ {
+        background-color: red;
+        color: white;
+        font-weight: bolder;
+        border-radius: 5px;
+      }
+      .toggle_1 {
+        background-color: black;
+        color: white;
+      }
+      .toggle_2 {
+        background-color: white;
+        color: black;
+      }*/
+
+      /* part_2 */
+      /* part_3 */
+    </style>
+  </head>
+  <body>
+    <!-- part_1 -->
+    <!-- <h1 id="myId" class="myClsH1">This is Events chapter</h1>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <button class="myClsB">click_me</button>
+    <button id="toggle_">change screen mode</button> -->
+
+    <!-- part_2 -->
+    <!-- part_3 -->
+
+    <script>
+      // part_1
+      //Event handling(inline handle se js handle ko tareejh daty ha)
+      //aor kasi be evnt ko ak bar handle kar dia to fir dobra aos ko ni kar sakhty agr kara to wo cheze over wirte kar da ga
+      // let evH1 = document.querySelector("h1");
+      // console.log(evH1);
+      // evH1.style.cursor = "pointer";
+      // evH1.onclick = () => {
+      //   evH1.classList.add("myClsH_2");
+      //   let a = (evH1.innerText = "Hi this is me Zaheer Abbas");
+      //   evH1.innerText = `${a} i studying in karachi uni bba dp`;
+      // };
+
+      // let evDiv = document.querySelector("div");
+      // console.log(evDiv);
+      // evDiv.style.cursor = "pointer";
+      // evDiv.onmouseover = (e) => {//e is a event oject
+      //   evDiv.classList.add("myClsH_2");
+      //   console.log(evDiv);
+      //   console.log(e);//object print
+      // };
+
+      //event listeners(enevnt and callback function)
+      //benefits of events listiner is use multipul kam karwata sakhty hy mltb asko bar bar use kar sakhty he
+      // let eleH_Id = document.querySelector("#myId");
+      // console.log(eleH_Id);
+      // eleH_Id.addEventListener("click", (e) => {
+      //   //use call back function its mens event hyndaler
+      //   eleH_Id.classList.add("myClsH_2");
+      //   let a = (eleH_Id.innerText = "Hi this is me Zaheer Abbas");
+      //   eleH_Id.innerText = `${a} i studying in karachi uni bba dp`;
+      //   console.log(e);
+      //   console.log(e.type);
+      //   console.log(e.target);
+      // });
+      // eleH_Id.addEventListener("click", () => {
+      //   console.log("hyndlaer_1");
+      // });
+      // eleH_Id.addEventListener("click", () => {
+      //   console.log("hyndlaer_2");
+      // });
+      // const hyndler_3 = (e) => {
+      //   //tab bany ga jab aggy ja kr asko delete karna ho
+      //   console.log("hyndlaer_3");
+      // };
+      // eleH_Id.addEventListener("click", hyndler_3); //wase add to ham ase he kar sakhty ha but ye delete aasnin se hoga ku ki ye same memry me store he warna alg lag jagh lety he function
+      // eleH_Id.removeEventListener("click", hyndler_3); //delete event listiner
+
+      // //example
+      // let accTog_ = document.querySelector("#toggle_");
+      // console.log(accTog_);
+      // let currMode_1 = true;
+      // let currMode_2 = "light";
+      // let numberOfT_3 = 0;
+      // let accBody_$ = document.querySelector("body");
+      // accTog_.addEventListener("click", () => {
+      //   if (currMode_1 === true) {
+      //     currMode_1 = false;
+      //     currMode_2 = "dark";
+      //     accBody_$.classList.add("toggle_1");
+      //     accBody_$.classList.remove("toggle_2");
+      //   } else {
+      //     currMode_1 = true;
+      //     currMode_2 = "light";
+      //     accBody_$.classList.add("toggle_2");
+      //     accBody_$.classList.remove("toggle_1");
+      //   }
+      //   numberOfT_3++;
+      //   console.log(currMode_1);
+      //   console.log(currMode_2);
+      //   console.log(numberOfT_3);
+      // });
+
+      // part_2
+      //classes and object as me se koi asi project hoti he jis me classes ki koi zorart ni hoti
+      //koi ase project hoti he aos me object banai ki koi zorrt ni hoti to kanhi object use hoti he kenhi classes
+      //aor ye 2no sawal interview se pochi jaa sakhty he kasi be interview py
+      //kasre project me 2no be ho sakhty he kasi me thore thore istmal me kar sakhty ha
+
+      // const student = {
+      //   fullName: "Zaheer Abbas", //properties
+      //   marks: 90, //properties
+      //   printMark: function () {
+      //     console.log("Marks = ", this.marks);
+      //   }, //asko ham methds kehty ha method wo hoti he jjo hai koi kamm kar ka da dain
+      // };
+      // console.log(student);
+      // console.log(student.fullName);
+      // console.log(student.printMark());
+      //js object have spical properties prototype, prototype khud be ak object he asski andar kfi methds and propertiz he
+      //js ki ander jab bekoi object banty ha aoski ander bydefolt prototype inheart ho jatty he ham aos se aos ki function use karty ha
+
+      // const employee = {
+      //   calcTax_1() {
+      //     console.log("tax rate is 10%");
+      //   }, //ths is best way to write function in object
+      //   calcTax_2: function () {
+      //     console.log("tax rate is 20%");
+      //   }, //this is also wite but not recomded
+      // };
+      // employee.calcTax_1()
+      // employee.calcTax_2()
+
+      // const employee_2 = {
+      //   calcTax_1 (){
+      //     console.log("tax rate is 10%");
+      //   }, //ths is best way to write function in object
+      //   calcTax_2: ()=> {
+      //     console.log("tax rate is 20%");
+      //   }, //this is also write but not recomded
+      // };
+      // employee_2.calcTax_2()
+      // employee_2.calcTax_1()
+
+      // const employee_3 = {
+      //   calcTax_1() {
+      //     console.log("tax rate is 10%");
+      //   },
+      // };
+      // const zaheerAbbas = {
+      //   salary: 20000,
+      //   // calcTax_1() {
+      //   //   console.log("tax rate is 20%");
+      //   // }, this is nearest methd so asle protoype se phle ye wala method print hoga
+      // };
+
+      // zaheerAbbas.__proto__ = employee_3; //this is way to set a prototype aska ya mtlb ha ham empolye_3 wale boject ki function ham zaheerAbbas object me use kar sakhty ha
+      // console.log(zaheerAbbas);
+      // console.log(zaheerAbbas.salary);
+      // console.log(zaheerAbbas.calcTax_1()); //this is calcTax_1 function of employee_3 object
+      //if object and protoype have same methd, object method will be used
+
+      // part_3
+      // class toyotaCar { //class ak blueprint ha
+      //   start() {
+      //     console.log("Start");
+      //   }
+      //   stop() {
+      //     console.log("Stop");
+      //   }
+      //   setBrand(brand) {
+      //     // this.brandName = brand; //this ki sath wale ka name same rakh sakhty ha jo this ki sath ha wo class se bani wale boject kai method  ha jo equl ki side wala brand likha ha wo function ka argumts ha
+      //     this.brand = brand; //recomded ye he same name wala
+      //   }
+      // }
+      // let myFortuner = new toyotaCar();
+      // myFortuner.setBrand("ZaheerCar");
+      // console.log(myFortuner);
+
+      // console.log(myFortuner.stop());
+      // console.log(myFortuner.start());
+
+      // class studentData {
+      //   constructor(brand, myAge) {
+      //     console.log("Hello world"); //custom constractor ye auto invoke hoga aor sab se phle ye invoke hota ha
+      //     this.brand = brand;
+      //     this.myAge = myAge
+      //   }
+      //   goUni() {
+      //     console.log("Uni is open");
+      //   }
+      //   doNotGoUni() {
+      //     console.log("Uni is close");
+      //   }
+      // }
+      // let createOb = new studentData(); //constructor() autometic invoked by new keyword jab ham object ko initalze karty aos wakht create ho jatta ha
+      // //ham apna costom constructor bnna sakhty ha
+      // console.log(createOb);
+      // console.log(createOb.goUni());
+      // console.log(createOb.doNotGoUni());
+      // let createNewOb = new studentData("ZAHEER_ABBAS", 20);
+      // console.log(createNewOb.brand);
+
+      // part_4
+      //inheritance in js(passing down properties and methds from parent class to child class)
+      // class myParent{
+      //   hello_1(){
+      //     console.log("Hello world");
+      //   }
+      // }
+      // class myChild extends myParent {
+      //   hello_2(){
+      //     console.log("I am sleep");
+      //   }
+      // }
+      // let crOb = new myChild()
+      // console.log(crOb.hello_2());
+      // console.log(crOb.hello_1());
+
+      //ex_1
+      // class person_ {
+      //   constructor() {
+      //     console.log("Enter person constructor");
+      //     this.person_Cons = "person constructor";
+      //   }
+      //   sleep_() {
+      //     console.log("sleep");
+      //   }
+      //   eat_() {
+      //     console.log("eat");
+      //   }
+      //   work_() {
+      //     console.log("i am parient fun");
+      //   }
+      // }
+      // let crPersonOb = new person_();
+      // console.log(crPersonOb);
+
+      // class doctor_ extends person_ {
+      //   work_() {
+      //     //jab be child and pareint ka methds same hoga aos time hemsha child wala methds chaly ga aor yahn as process ko ham method overriding
+      //     console.log(" doctor treat patient");
+      //   }
+      // }
+      // let crDrOb = new doctor_();
+      // console.log(crDrOb); //asme persn ki methds enhert hio ka aa rahe ha consrotr be
+      // console.log(crDrOb.work_());
+      // console.log(crDrOb.eat_());
+      // console.log(crDrOb.sleep_());
+
+      // class engineer_ extends person_ {
+      //   constructor(softwere_div) {
+      //     console.log("enter child engineer constrotr");
+      //     super() // to invoke parient class constructor
+      //     this.engCons = softwere_div;
+      //     console.log("exit child engineer constructor");
+      //   }
+      //   habit_() {
+      //     console.log("do something");
+      //   }
+      // }
+      // let crEngOb = new engineer_("Zaheer_enginerr");
+      // console.log(crEngOb);
+      // console.log(crEngOb.work_());
+      // console.log(crEngOb.habit_());
+      // console.log(crEngOb.sleep_());
+      // console.log(crEngOb.eat_());
+      // console.log(crEngOb.person_Cons); //this is constructor enhrit from person class to engineer class in object
+      // console.log(crEngOb.engCons); //this is constructor engineer class in object
+
+      //ex_2
+      // class person_ {
+      //   constructor(name) { //jab ham supper constructor me name and parient constructor me mynme ho fir ham 2no me this.name kar ka print kar sakhty ha warna ak he hoga
+      //     console.log("Enter person constructor");
+      //     this.person_Cons = "person constructor";
+      //     this.name=name
+      //   }
+      //   sleep_() {
+      //     console.log("sleep");
+      //   }
+      //   eat_() {
+      //     console.log("eat");
+      //   }
+      //   work_() {
+      //     console.log("i am parient fun");
+      //   }
+      // }
+      // let crPersonOb = new person_();
+      // console.log(crPersonOb);
+
+      // class doctor_ extends person_ {
+      //   work_() {
+      //     //jab be child and pareint ka methds same hoga aos time hemsha child wala methds chaly ga aor yahn as process ko ham method overriding
+      //     console.log(" doctor treat patient");
+      //   }
+      // }
+      // let crDrOb = new doctor_();
+      // console.log(crDrOb); //asme persn ki methds enhert hio ka aa rahe ha consrotr be
+      // console.log(crDrOb.work_());
+      // console.log(crDrOb.eat_());
+      // console.log(crDrOb.sleep_());
+
+      // class engineer_ extends person_ {
+      //   constructor(name) {
+      //     console.log("enter child engineer constrotr");
+      //     super(name) // to invoke parient class constructor
+      //     console.log("exit child engineer constructor");
+      //   }
+      //   habit_() {
+      //  //ye ak asa keyword he jo phle parient wala fun run hoga fir child wala fun
+      //     console.log("do something");
+      //   }
+      // }
+      // let crEngOb = new engineer_("Zaheer_Abbas");
+      // console.log(crEngOb);
+      // console.log(crEngOb.work_());
+      // console.log(crEngOb.habit_());
+      // console.log(crEngOb.sleep_());
+      // console.log(crEngOb.eat_());
+      // console.log(crEngOb.person_Cons); //this is constructor enhrit from person class to engineer class in object
+      // console.log(crEngOb.name); //this is constructor engineer class in object
+
+      //example__
+
+      // let data_ = "secret information";
+      // class user_ {
+      //   constructor(name, email) {
+      //     this.name = name;
+      //     this.email = email;
+      //   }
+      //   viewData() {
+      //     console.log("data = ", data_);
+      //   }
+      // }
+
+      // class admin extends user_ {
+      //   constructor(name, email) {
+      //     super(name, email);
+      //   }
+      //   editData() {
+      //     data_ = "some new data";
+      //   }
+      // }
+      // let create_email = "@gmail.com";
+      // let student_1 = new user_("Zaheer Abbas", `zaheerabbas${create_email}`);
+      // let student_2 = new user_("Zaheer Abbas", `hasnainabbas${create_email}`);
+      // console.log(student_1);
+      // console.log(student_2);
+
+      // let teacher_1 = new user_("Sobho Khan", `sobhokhan${create_email}`);
+      // let teacher_2 = new user_(
+      //   "Mushtaque Ahmed",
+      //   `mushtaqueahmed${create_email}`
+      // );
+      // console.log(teacher_1);
+      // console.log(teacher_2);
+
+      // let admin_1 = new admin("Rajab_Uddin", `rajab_uddin${create_email}`);
+      // let admin_2 = new admin("Ali_Gul", `ali_gul${create_email}`);
+      // console.log(admin_1);
+      // console.log(admin_2);
+      // console.log(data_);
+      // console.log(admin_1.editData());
+      // console.log(data_);
+
+      //error handling use try catch
+      // let a = 2;
+      // let b = 3;
+      // console.log(a + b);
+      // console.log(a - b);
+      // console.log(a * b);
+      // try {
+      //   console.log(a + c); //normal code
+      // } catch (error) {
+      //   //error is error obj
+      //   console.log(error); //handling error
+      // }
+      // console.log(a + b);
+      // console.log(a * b);
+    </script>
+  </body>
+</html>
