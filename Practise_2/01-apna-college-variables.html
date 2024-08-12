@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // alert("myName") //correct and rec
+      // alert('myName2') //correct but not rec
+      // myName = "Zaheer Abbas"
+      // console.log(myName);
+      // console.log("myName Zaheer Abbas");
+
+      // var myAge = 22
+      // console.log(myAge);
+      // var myAge = 25
+      // console.log(myAge);
+
+      //   let myLife = 30
+      //   console.log(myLife);
+      //    myLife = 35
+      //   console.log(myLife)
+      //   {
+      // let myLifer = 40
+      // console.log(myLifer);
+      //  myLife = 45
+      // console.log(myLife);
+      // }
+      //  myLifer = 50
+      // console.log(myLifer);
+      // {myLifer = 45
+      // console.log(myLife);
+      // }
+
+      // const a = 10
+      // console.log(a)
+
+      // {const a = 15
+      // console.log(a);
+      //  const b = 20
+      // console.log(b);
+      // }
+      // const myObject = {
+      //   fullName : "Zaheer Abbas",
+      //   age : 20,
+      //   class : 12,
+      //   isPass : true
+      // }
+      // console.log(myObject["fullName"]);
+      // console.log(myObject.fullName);
+      // myObject.class = myObject.class+2
+      // console.log(myObject.class);
+      // myObject.first = "Noorani"
+      // console.log(myObject.first );
+      // console.log(typeof myObject.fullName);
+
+      // let num = Number.parseInt(prompt("Enter any number"));
+      // if (num % 2 === 0) {
+      //   console.log(num, "This number is even");
+      // } else {
+      //   console.log(num, "This number is Odd");
+      // }
+
+      // let age = Number.parseInt(prompt("Enter any number"));
+      // let myAge = age>= 18 ? "Adult" : "not Adult"
+      // console.log(myAge);
+
+      // let num = Number.parseInt(prompt("Enter any number"));
+      // if (num%5 ===0) {
+      //   console.log(num, "Multipule of 5");
+      // } else {
+      //   console.log(num, "Not Multipule of 5");
+
+      // }
+
+      //big example
+      // let famlyMember = prompt("Enter the name of famely member");
+      // let famlyMemberAge = Number.parseInt(prompt("Enter famly member age"));
+      // if (famlyMember === "Rajab Uddin" && famlyMemberAge >= 50) {
+      //   console.log("My name is Rajab Uddin my age is " + famlyMemberAge);
+      // } else if (famlyMember === "Zaheer Abbas" && famlyMemberAge >=20) {
+      //   console.log("My name is Zaheer Abbas my age is " + famlyMemberAge);
+      // } else if (famlyMember === "Hassnain Abbas" && famlyMemberAge <= 2) {
+      //   console.log("My name is Hassnain Abbas my age is " + famlyMemberAge);
+      // } else {
+      //   console.log("you are not correct any result");
+      // }
+
+      //example
+      // let usearAge = Number.parseInt(prompt("Enter your age"))
+      // let myAge = usearAge>=18? "you are adult" : "you are not adult"
+      // console.log(myAge);
+
+      // let username = prompt("Enter your Name");
+      // let age = Number.parseInt(prompt("Enter age"));
+      // if (username === "Zaheer Abbas") {
+      //   myAge = age >= 18 ? "you are selected" : "you are not selected";
+      //   console.log(myAge);
+      // } else if (username === "Rajab Uddin") {
+      //   myAge = age >= 50 ? "you are old man" : "you are young";
+      //   console.log(myAge);
+      // } else {
+      //   myAge = age >= 5 ? "you are age is " + age : "you are baby";
+      //   console.log(myAge);
+      // }
+      // for (i = 0; i <= 10; i++) {
+      //   console.log(i);
+      // }
+      // console.log("and");
+      // let i = 0;
+      // while (i <= 10) {
+      //   console.log(i);
+      //   i++
+      // }
+
+      // let i = 0;
+      // do {
+      //   console.log(i);
+      //   i++;
+      // } while (i <= 10);
+
+      //onle use for string and arry
+
+      // let str = "ZaheerAbbas"
+      // let strSize = 0
+      // for (let iterator of str) {
+      //   console.log(iterator);
+      //   strSize++
+      // }
+      // console.log(strSize);
+
+      //for in ko onle for object and arry
+      // let dataOfStudent = {
+      //   name: "Zaheer Abbas",
+      //   age: 20,
+      //   inClass: 10,
+      //   uni: "Unversity of Karachi"
+      // };
+      // for (const val in dataOfStudent) {
+      //   console.log(dataOfStudent[val]);
+      // }
+
+      //for example
+      // let num = 100
+      // for (let i = 0; i <=num; i++) {
+      //   if (i % 2 === 0) {
+      //     console.log(i);
+      //   }
+      // }
+      // let i = 0;
+      // let num2 = 100;
+      // while (i <= num2) {
+      //   if (i % 2 === 0) {
+      //     console.log(i);
+      //   }
+      //   i++;
+      // }
+      // let i = 0;
+      // let num3 = 100;
+      // let size = 0;
+      // do {
+      //   if (i % 2 === 0) {
+      //     console.log(i);
+      //     size++;
+      //   }
+      //   i++;
+      // } while (i <= num3);
+      // console.log("The even number total irration is " + size);
+
+      //example
+      // let gameNumber = 30;
+      // let usearNumber = Number.parseInt(prompt("Gase the Game Number"));
+      // while (usearNumber != gameNumber) {
+      //   usearNumber = Number.parseInt(
+      //     prompt("Enter wrong gase game number again")
+      //   );
+
+      // }
+      // console.log("yes");
+
+      // let str = "Zaheer Abbas"
+      // console.log(str);
+      // let size = str.length
+      // console.log(size);
+      // console.log(str[6]);//count space
+      // console.log(str[7]);
+      // let position = str[9]
+      // console.log(position);//this is also be possible
+
+      let expreation = 12 + 12;
+      let spicaltypeOfstr = `Zaheer Abbas ${expreation}`;
+      console.log(spicaltypeOfstr);
+
+      // let num = 0;
+      // let myNum = 100;
+      // let sizeOfItration = 0;
+      // do {
+      //   if (num % 2 === 0) {
+      //     console.log(num);
+
+      //     sizeOfItration++;
+      //   }
+      //   num++;
+      // } while (num <= myNum);
+      // console.log(`The total itration of your function is ${sizeOfItration}`);
+
+      //  let sum = 0
+      //  for(i = 1; i<=10; i++){
+      //   sum = sum + i
+      // }
+      // console.log(sum);
+
+      // let i = 1
+      // let sum = 0
+      // while (i<=10) {
+      //   sum = sum + i
+      //   i++
+      // }
+      // console.log(sum);
+
+      // let sum = 0;
+      // let i = 1;
+      // do {
+      //   sum = sum + i;
+      //   i++
+      // } while (i <= 10);
+      // console.log(sum);
+
+      // let str = "Zaheer Abbas";
+      // let size = 0;
+      // for (let i of str) {
+      //   console.log(i);
+      //   size++;
+      // }
+      // console.log(size);
+
+      // let student = {
+      //   myName : "Zaheer Abbas",
+      //   age : 20,
+      //   cgpa : 3.6,
+      //   isPass : true
+      // }
+      // for (let key in student) {
+      //   console.log(key, student[key]);
+      // }
+
+      // for (let nNumber = 0; nNumber <= 100; nNumber++) {
+      //   if (nNumber % 2 === 0) {
+      //     console.log(nNumber);
+      //   }
+      // }
+
+      // let myObj = {
+      //   item: "Pen",
+      //   cost: 10,
+      // };
+      // console.log("the cost of", myObj.item, "is", myObj.cost, "ruppes");
+      // let outPut = `the cost of ${myObj.item} is ${myObj.cost} ruppes`;
+      // console.log(outPut);
+
+      // let myName = "Zaheer \nAbbas"
+      // console.log(myName);
+
+      // let myName = "Zaheer \tAbbas"
+      // console.log(myName);
+
+      // let mystr = "zaheer Abbaas";
+      // mystr = mystr.toUpperCase();
+      // console.log(mystr);
+
+      // let mystr = "zaheer ABBas";
+      // mystr = mystr.toLowerCase();
+      // console.log(mystr);
+
+      // let mystr = "      zaheer      ABBas           ";
+      // let myNewStr = mystr.toLowerCase();
+      // let mytrim = mystr.trim();
+      // let outPut = (myNewStr, mytrim)
+      // console.log(outPut);
+
+      // let fullName = prompt("Emter Your name without space to genrate the username", "ZaheerAbbas")
+      // let updateName = fullName.toLocaleLowerCase()
+      // let finalOutPut = "@"+updateName+updateName.length
+      // console.log(finalOutPut);
+
+      // let name = ["Zaheer", "Abbas", "Ali gul", "Hassnain Abbas"]
+      // console.log(name);
+      // console.log(typeof(name));
+      // console.log(name.length);
+      // console.log(name[2]);
+      // name[1] = "Noorani"
+      // console.log(name);
+
+      // let name = ["Zaheer", "Abbas", "Ali gul", "Hassnain Abbas"];
+      // // for (let i = 0; i < name.length; i++) {
+      // //   console.log(name[i]);
+      // // }
+      // for (let iterator of name) {
+      //   console.log(iterator);
+      // }
+
+      // let marks = [99, 90, 85, 70, 68, 65, 60,50]
+      // let sum = 0
+      // for (let iterator of marks) {
+      //   // sum = sum + iterator
+      //   sum += iterator
+      // }
+      // let average = sum/marks.length
+      // // console.log(`average of total marls = ${average}`);
+      // console.log("average of total marls "+ average);
+
+      // let items = [250, 645, 300, 900, 50];
+      // let i = 0
+      // for (let iterator of items) {
+      //   let offer = iterator/10
+      //    items[i] = items[i]-offer
+      //   console.log("value after offer " + items[i]);
+      //   i++
+      // }
+      // for (let i = 0; i < items.length; i++) {
+      //   let offer = items[i] / 10;
+      //   items[i] = items[i] - offer;
+      //   console.log("vale of after offer " +items[i]);
+      // }
+
+      // let nameOfCompines = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]
+      // // nameOfCompines.shift()
+      // // console.log(nameOfCompines);
+
+      // let nameOfCompines = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]
+      // nameOfCompines.splice(2,1,"ola")
+      // console.log(nameOfCompines);
+
+      // let nameOfCompines = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]
+      // nameOfCompines.push("Amazon")
+      // console.log(nameOfCompines);
+
+      //#05
+      // function myFunction(x, y) {
+      //   console.log(x + y);
+      // }
+      // myFunction(2, 5);
+
+      // function myFunction(x, y) {
+      //   val = x + y;
+      //   return val;
+      // }
+      // let myVal = myFunction(2, 5);
+      // console.log(myVal);
+
+      // let myValue = (a,b) => {
+      //   console.log(a*b);
+      // }
+      // myValue(2,5)
+
+      //   let myValue = (a,b) => {
+      //    let multi = a*b
+      //    return multi
+      //   }
+      // let updateName=myValue(9,9)
+      // console.log(updateName);
+
+      //smjh ni aya ye wala example
+      // function countVowels(my) {
+      //   for (let i of my) {
+      //     if (i === "a" || i === "e" || i==="i" || i==="0" || i==="u") {
+
+      //     }
+      //   }
+      //   console.log();
+      // }
+      // countVowels()
+
+      // let myAry = [1,2,3,4,5,6,7,8,9]
+      // myAry.forEach(function myfun(value){
+      //   console.log(value);
+      // });
+
+      // let myAry = [1,2,3,4,5,6,7,8,9]
+      // myAry.forEach((value) => {
+      //   console.log(value*value);
+      // });
+
+      // let myAry = [1,2,3,4,5,6,7,8,9]
+      // let myArrowFunction = (value) => {
+      //   console.log(value*value);
+      // }
+      // myAry.forEach(myArrowFunction);
+
+      // let anyArry = [1, 3, 4, 5, 6, 7, 8, 9, 10];
+      // anyArry.map((value) => {
+      //   console.log(value);
+      // });
+
+      //   let anyArry = [1, 3, 4, 5, 6, 7, 8, 9, 10];
+      //  let newArry = anyArry.map((value) => {
+      //   return value *3
+      //   });
+      //   console.log(anyArry[1]);
+      //   console.log(newArry[1]);
+
+      //   let anyArry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      //  let newArry = anyArry.map((value) => {
+      //   return value%2===0
+      //   });
+      //   console.log(anyArry);
+      //   console.log(newArry);
+
+      //   let anyArry1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      //  let newArry1 = anyArry1.filter((value) => {
+      //   return value%2===0
+      //   });
+      //   console.log(anyArry1);
+      //   console.log(newArry1);
+
+      // let anyArry1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // let newArry1 = anyArry1.reduce((prev, curr) => {
+      //   return prev > curr ? prev : curr;
+      // });
+      // console.log(anyArry1);
+      // console.log(newArry1);
+
+      // let anyArry2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // let newArry2 = anyArry2.reduce((prev, curr) => {
+      //   return prev + curr;
+      // });
+      // console.log(anyArry2);
+      // console.log(newArry2);
+    </script>
+  </body>
+</html>

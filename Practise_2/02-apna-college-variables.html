@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The DOM</title>
+    <style>
+      .container {
+        /* display: flex; */
+        border: 2px solid red;
+      }
+      .box {
+        margin: 5px;
+        background-color: black;
+        color: white;
+        border: 2px solid red;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="myid">
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+      <div class="box">box-4</div>
+      <div class="box">box-5</div>
+      <div class="box">box-6</div>
+      <div class="box">box-7</div>
+      <div class="box">box-8</div>
+      <div class="box">box-9</div>
+      <div class="box">box-10</div>
+    </div>
+    <script>
+      let button = document.createElement("button");
+      button.innerText = "click_me";
+      button.style.backgroundColor = "black";
+      button.style.border = "2px solid red";
+      button.style.borderRadius = "6px";
+      button.style.color = "white";
+      //  console.log(b);
+      let newBtn = document.querySelector(".container");
+      // newBtn.append(button);
+      // newBtn.prepend(button);
+      // newBtn.after(button);
+      newBtn.before(button);
+    </script>
+  </body>
+</html>
